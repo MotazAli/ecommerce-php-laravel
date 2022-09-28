@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bgimg {
+    background-image: url('/assets/images/Cobra-logo.png');
+    background-repeat: no-repeat;
+    background-size: 800px 400px;
+    height: 100%;
+    background-position: center;
+    /* background-size: cover; */
+    position: relative;
+    background-color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    /* top: 50%; */
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+    
+  }
+
+
+  .middle h1{
+    color: black;
+    font-family:'Gellatio Personal Use';
+    font-size: 2rem;
+  }
+
+
+
+  /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+
+
+  .bgimg {
+   
+    background-size: contain;
+    
+  }
+
+ 
+  .middle {
+    top: 70%;
+  }
+
+  .middle h1{
+    
+    font-size: 1rem;
+  }
+
+
+ }
