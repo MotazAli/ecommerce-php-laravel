@@ -13,17 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->uuid('id')->primary();
-            //$table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+        Schema::create('store_categories', function (Blueprint $table) {
+            $table->uuid();
+            $table->uuid('store_id');
+            $table->uuid('category_id');
+            $table->boolean('is_active')->default(0);
             $table->boolean('is_deleted')->default(0);
             $table->uuid('created_by');
             $table->uuid('updated_by');
-            $table->rememberToken();
+            $table->foreignUuid('store_id')->references('id')->on('stores')->onDelete('cascade');
+            $table->foreignUuid('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -35,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('store_categories');
     }
 };

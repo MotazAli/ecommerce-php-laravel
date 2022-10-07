@@ -1,9 +1,9 @@
-<x-layout>
+<x-layouts.app>
     <div class="about-container">
 
         <div class="about-section">
             <div  class="cobraKimonosLogoHolder">
-                <img src="{{asset('/assets/images/Cobra-logo.png')}}" height="35px" width="100px" alt='cobra logo' />   
+                <img src="{{asset('/assets/images/Cobra-logo.png')}}" height="80px" width="150px" alt='cobra logo' />   
             </div>
             
             <p>We Deliver Quality</p>
@@ -23,10 +23,34 @@
         
         <br/>
         <div class="about-section">
-            <img src="{{asset('/assets/images/IJJC.png')}}" height="35px" width="100px" alt='cobra logo' />
+            <img src="{{asset('/assets/images/IJJC.png')}}" height="150px" width="150px" alt='cobra logo' />
             <h1>IJJC Academy</h1>
-            <p>Some text about who we are and what we do.</p>
-            <p>Resize the browser window to see that this page is responsive by the way.</p>
+            <p>We are the International Jiu-Jitsu Center, conveniently 
+                located in New Cairo. Our Jiu-Jitsu Center is an 
+                excellent choice for self-defence, discipline, and fitness 
+                for all ages. Jiu-Jitsu is a Martial Arts program that 
+                focuses on Character Education, Martial Arts 
+                Education, and Physical Education. We offer classes in 
+                a fun, safe, and supervised environment where our 
+                children can learn essential life skills, including 
+                discipline, respect, focus, self-control, teamwork, 
+                leadership, and gratitude, all while improving their 
+                physical health.
+            </p>
+            <p>
+                Jiu-Jitsu is a powerful character-builder and one of the 
+                most practical and complete forms of self-defence. We are 
+                reaching out our services to clubs and schools in our 
+                community because we genuinely care about making a 
+                difference in peoples lives.
+            </p>
+            <p>
+                Our academy is affiliated under Professor Fouzi 
+                Mezouari, a 3rd-degree black belt holder from Delariva 
+                Paris and a two-time world vice-champion UAEJJ, a four-time French champion, a multiple international open 
+                medalist, and a pro league champion CFJJB.
+            </p>
+            <a href="/ijjc" >Read more...</a>
         </div>
         
         <br/>
@@ -99,4 +123,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-layouts.app>

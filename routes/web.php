@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\StoresController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +20,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-//Home page// https://<URL>/
-Route::get('/', [HomeController::class,'index']);
-Route::get('/home',[HomeController::class,'realHomeIndex']);
+
+
+
+
+//Store page// https://<URL>/store
+Route::get('/stores/{id}',[StoresController::class,'show'])->name('shores.show');
+Route::get('/stores',[StoresController::class,'index'])->name('stores.index');
 
 //About page// https://<URL>/about
-Route::get('/about',[AboutController::class,'index']);
+Route::get('/about',[AboutController::class,'index'])->name('about.index');
+
+
+//Home page// https://<URL>/
+Route::get('/home',[HomeController::class,'index'])->name('home.index');
+Route::get('/', [HomeController::class,'soonIndex'])->name('home.soon');

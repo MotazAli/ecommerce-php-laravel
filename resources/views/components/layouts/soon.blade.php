@@ -8,10 +8,12 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/gellatio-personal-use" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lexend Mega' rel='stylesheet'>
+        {{-- <link href="https://fonts.cdnfonts.com/css/gellatio-personal-use" rel="stylesheet"> --}}
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href={{url('css/soon.css')}}>
-
+        @vite('resources/css/app.css')
+        
     </head>
     <body>
         {{$slot}}

@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     //show home index
-    function index(){
+    function soonIndex(){
         return view('home.soon');
     }
 
 
-    function realHomeIndex(){
+    function index(){
         return view('home.index');
     }
 }

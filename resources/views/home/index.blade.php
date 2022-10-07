@@ -1,3 +1,3 @@
-<x-layout>
-    real web site
-</x-layout>
+<x-layouts.app>
+    .... still working on it ....
+</x-layouts.app>

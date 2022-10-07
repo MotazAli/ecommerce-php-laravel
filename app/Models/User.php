@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_deleted',
+        'created_by',
+        'updated_by',
     ];
 
     /**
@@ -41,4 +44,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function addresses(){
+        $this->hasMany(Address::class);
+    }
+
+
+    public function stores(){
+        $this->hasMany(Store::class);
+    }
 }

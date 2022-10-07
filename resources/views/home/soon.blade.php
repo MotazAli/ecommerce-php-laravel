@@ -1,4 +1,4 @@
-<x-soonlayout>
+<x-layouts.soon>
     <div class="bgimg">
 
         <div class="middle">
@@ -8,4 +8,4 @@
         </div>
         
       </div>
-</x-soonlayout>
+</x-layouts.soon>
